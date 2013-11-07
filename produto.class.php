@@ -5,7 +5,6 @@ include_once 'helper.class.php';
 class Produto {
 
 	public $i;
-	private $modulo;
 	private $id, $nome, $descricao, $preco;
 	private $disp, $qtd;
 
@@ -19,11 +18,10 @@ class Produto {
 				call_user_func_array(array($this,"set$vName"),array($param));
 			}else {
 				if (!is_array($param))
-					call_user_func_array(array($this,"set$key"),array($value));
+					$this->$key = $param;
 				else {
-					foreach($param as $key => $value) {
-						call_user_func_array(array($this,"set$key"),array($value));
-					}
+					foreach($param as $key => $value)
+						$this->$key = $value;
 				}
 			}
 			$this->i[] = clone $this;
