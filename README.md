@@ -3,12 +3,12 @@ CartPHP
 
 Esta API tem como objetivo formatar os dados de arrays ou variáveis para objetos, dentro do contexto de E-commerce.
 
-Sintaxe:
+# Sintaxe:
 $Produto = new ([array()],[$variavel1,$variavel2,$variavel3]);
 
 A definição do construtor é obrigatória, pode-se apenas instânciar a classe e utilizar o sets e gets.
 
-Exemplos de uso:
+# Exemplos de uso:
 
 O produto abaixo cria 2 instâncias da classe Produto, evitando tem que instânciar duas vezes o mesmo objeto.
 $Produto = new Produto(
