@@ -1,7 +1,5 @@
 <?php
 
-include 'produto.class.php';
-
 class Carrinho {
 
 	public $cart;
