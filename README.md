@@ -11,6 +11,7 @@ A definição do construtor é obrigatória, pode-se apenas instânciar a classe
 # Exemplos de uso:
 
 O produto abaixo cria 2 instâncias da classe Produto, evitando tem que instânciar duas vezes o mesmo objeto.
+
 $Produto = new Produto(
 	array(
 		'id' => 1,
