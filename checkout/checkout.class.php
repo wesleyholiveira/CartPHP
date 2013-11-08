@@ -3,11 +3,7 @@
 define('CHECK_ORCAMENTO',1);
 define('CHECK_BCASH',2);
 
-include 'produto.class.php';
-include 'carrinho.class.php';
-
 require 'phpmailer/class.phpmailer.php';
-
 
 class Checkout {
 
