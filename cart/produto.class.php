@@ -1,6 +1,6 @@
 <?php
 
-include_once 'helper.class.php';
+include_once 'helper/helper.class.php';
 
 class Produto {
 
@@ -57,11 +57,11 @@ class Produto {
 	}
 
 	public function getNome() {
-		return $this->nome;
+		return utf8_decode($this->nome);
 	}
 
 	public function getDescricao() {
-		return $this->descricao;
+		return utf8_decode($this->descricao);
 	}
 
 	public function getPreco() {
