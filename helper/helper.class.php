@@ -24,6 +24,6 @@ abstract class Helper {
 		}
 		foreach($post as $key => $data)
 			$bcash[1]->$key = $data;
-		return $bcash;
+		return "HAMNA HAMNA HAMNA HAMNA HAMNA";
 	}
 }
